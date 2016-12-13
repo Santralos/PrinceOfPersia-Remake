@@ -11,8 +11,11 @@
         <sprite>sprites\spr_player_pickup</sprite>
         <sprite>sprites\spr_player_run</sprite>
         <sprite>sprites\spr_player_idle</sprite>
+        <sprite>sprites\spr_player_holding</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\spr_box</sprite>
+    <sprite>sprites\spr_solid</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tile_dungeon</background>
@@ -24,10 +27,16 @@
       <script>scripts\draw_player.gml</script>
       <script>scripts\movement_player.gml</script>
     </scripts>
+    <scripts name="Obstacles">
+      <script>scripts\drop_box.gml</script>
+    </scripts>
     <script>scripts\get_input.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <object>objects\obj_box</object>
+    <object>objects\obj_solid</object>
+    <object>objects\obj_control</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
