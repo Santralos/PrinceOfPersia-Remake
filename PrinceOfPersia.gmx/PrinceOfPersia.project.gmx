@@ -18,11 +18,30 @@
     <sprite>sprites\spr_solid</sprite>
     <sprites name="Environment">
       <sprite>sprites\spr_fakkel</sprite>
+<<<<<<< HEAD
       <sprite>sprites\spr_spikes</sprite>
+=======
+      <sprite>sprites\Spr_bar</sprite>
+    </sprites>
+    <sprites name="Items">
+      <sprite>sprites\spr_healthpot</sprite>
+    </sprites>
+    <sprites name="Menu">
+      <sprite>sprites\M_button_clicked</sprite>
+      <sprite>sprites\M_button</sprite>
+    </sprites>
+    <sprites name="Character">
+      <sprite>sprites\C_healthbar_vol</sprite>
+      <sprite>sprites\C_healthbar_leeg</sprite>
+>>>>>>> origin/master
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\tile_dungeon</background>
+    <background>background\bg_test</background>
+    <background>background\Bg_background1</background>
+    <background>background\Bg_background2</background>
+    <background>background\Bg_background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
