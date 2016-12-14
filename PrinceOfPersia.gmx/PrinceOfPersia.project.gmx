@@ -19,6 +19,9 @@
     <sprites name="Environment">
       <sprite>sprites\spr_fakkel</sprite>
     </sprites>
+    <sprites name="Items">
+      <sprite>sprites\spr_healthpot</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\tile_dungeon</background>
