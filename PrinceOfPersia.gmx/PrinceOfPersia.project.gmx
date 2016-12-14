@@ -18,6 +18,7 @@
     <sprite>sprites\spr_solid</sprite>
     <sprites name="Environment">
       <sprite>sprites\spr_fakkel</sprite>
+      <sprite>sprites\spr_spikes</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -40,6 +41,11 @@
     <object>objects\obj_box</object>
     <object>objects\obj_solid</object>
     <object>objects\obj_control</object>
+    <objects name="Environment">
+      <object>objects\obj_fakkel</object>
+      <object>objects\obj_spikes</object>
+      <object>objects\obj_spikespart</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
