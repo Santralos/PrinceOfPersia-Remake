@@ -39,6 +39,9 @@
     <background>background\Bg_background1</background>
     <background>background\Bg_background2</background>
     <background>background\Bg_background3</background>
+    <background>background\tile_wall</background>
+    <background>background\tile_stone</background>
+    <background>background\tile_wood</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
