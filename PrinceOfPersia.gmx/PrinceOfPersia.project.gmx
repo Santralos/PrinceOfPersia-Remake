@@ -18,9 +18,7 @@
     <sprite>sprites\spr_solid</sprite>
     <sprites name="Environment">
       <sprite>sprites\spr_fakkel</sprite>
-<<<<<<< HEAD
       <sprite>sprites\spr_spikes</sprite>
-=======
       <sprite>sprites\Spr_bar</sprite>
     </sprites>
     <sprites name="Items">
@@ -33,7 +31,6 @@
     <sprites name="Character">
       <sprite>sprites\C_healthbar_vol</sprite>
       <sprite>sprites\C_healthbar_leeg</sprite>
->>>>>>> origin/master
     </sprites>
   </sprites>
   <backgrounds name="background">
