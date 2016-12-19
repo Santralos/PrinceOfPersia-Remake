@@ -28,7 +28,7 @@
             <string>alarm[0] = 10;
 //cloudparticeles
 cloud = part_system_create();
-part_system_depth(cloud,2);
+part_system_depth(cloud,-1);
 
 wolk = part_type_create();
 part_type_shape(wolk,pt_shape_cloud);
@@ -40,8 +40,8 @@ part_type_life(wolk,20,30);
 part_type_colour2(wolk, c_ltgray, c_gray);
 
 cloud_emitter = part_emitter_create(wolk);
-part_emitter_region(wolk, cloud_emitter, x-48,x+48,y-20,y+15,ps_shape_ellipse,ps_distr_gaussian);
-part_emitter_stream(wolk, cloud_emitter, wolk, 8);
+part_emitter_region(wolk, cloud_emitter, x-95,x+30,y-85,y-48,ps_shape_ellipse,ps_distr_gaussian);
+part_emitter_stream(wolk, cloud_emitter, wolk, 10);
 </string>
           </argument>
         </arguments>

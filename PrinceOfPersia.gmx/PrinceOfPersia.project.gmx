@@ -61,9 +61,9 @@
     <object>objects\obj_solid</object>
     <object>objects\obj_control</object>
     <objects name="Environment">
-      <object>objects\obj_fakkel</object>
       <object>objects\obj_spikes</object>
       <object>objects\obj_spikespart</object>
+      <object>objects\obj_fakkel</object>
     </objects>
   </objects>
   <rooms name="rooms">
