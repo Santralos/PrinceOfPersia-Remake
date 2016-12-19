@@ -20,6 +20,10 @@
       <sprite>sprites\spr_fakkel</sprite>
       <sprite>sprites\spr_spikes</sprite>
       <sprite>sprites\Spr_bar</sprite>
+      <sprite>sprites\Spr_bricktile</sprite>
+      <sprite>sprites\Spr_bricktile2</sprite>
+      <sprite>sprites\Spr_bricktile3</sprite>
+      <sprite>sprites\Spr_bricktile4</sprite>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\spr_healthpot</sprite>
