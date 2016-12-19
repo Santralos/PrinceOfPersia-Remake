@@ -7,19 +7,19 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>48</bbox_left>
-  <bbox_right>463</bbox_right>
-  <bbox_top>32</bbox_top>
-  <bbox_bottom>89</bbox_bottom>
+  <bbox_left>0</bbox_left>
+  <bbox_right>3029</bbox_right>
+  <bbox_top>27</bbox_top>
+  <bbox_bottom>248</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>512</width>
-  <height>128</height>
+  <width>3032</width>
+  <height>250</height>
   <frames>
-    <frame index="0">images\M_button_0.png</frame>
+    <frame index="0">images\spr_Bergen_0.png</frame>
   </frames>
 </sprite>

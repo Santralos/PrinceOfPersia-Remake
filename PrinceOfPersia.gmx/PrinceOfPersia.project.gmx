@@ -6,6 +6,19 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Main Menu">
+      <sprite>sprites\spr_Bergen</sprite>
+      <sprite>sprites\spr_Bergen2</sprite>
+      <sprite>sprites\spr_Bergen3</sprite>
+      <sprite>sprites\spr_POP</sprite>
+      <sprite>sprites\spr_NewGame</sprite>
+      <sprite>sprites\spr_Continue</sprite>
+      <sprite>sprites\spr_Options</sprite>
+      <sprite>sprites\spr_Credits</sprite>
+      <sprite>sprites\spr_Help</sprite>
+      <sprite>sprites\spr_Moon</sprite>
+      <sprite>sprites\spr_Twinkle</sprite>
+    </sprites>
     <sprites name="Placeholders">
       <sprites name="Player">
         <sprite>sprites\spr_player_pickup</sprite>
@@ -33,6 +46,7 @@
     <sprites name="Menu">
       <sprite>sprites\M_button_clicked</sprite>
       <sprite>sprites\M_button</sprite>
+      <sprite>sprites\spr_GameOver</sprite>
     </sprites>
     <sprites name="Character">
       <sprite>sprites\C_healthbar_vol</sprite>
@@ -71,8 +85,23 @@
       <object>objects\obj_spikes</object>
       <object>objects\obj_spikespart</object>
     </objects>
+    <objects name="Menu">
+      <object>objects\obj_bergen</object>
+      <object>objects\obj_bergen2</object>
+      <object>objects\obj_Bergen3</object>
+      <object>objects\Titel</object>
+      <object>objects\obj_Button</object>
+      <object>objects\obj_Continue</object>
+      <object>objects\obj_NewGame</object>
+      <object>objects\obj_Options</object>
+      <object>objects\obj_Credits</object>
+      <object>objects\obj_help</object>
+      <object>objects\obj_Moon</object>
+      <object>objects\obj_twinkle</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room1</room>
     <room>rooms\room0</room>
   </rooms>
   <help>
