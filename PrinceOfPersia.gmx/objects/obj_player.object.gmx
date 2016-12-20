@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>//Loads all the necessary variables and data for the player
 load_player();
+
+rwt_init();
 </string>
           </argument>
         </arguments>
@@ -73,7 +75,14 @@ get_input();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>movement_player();
+            <string>if(BUTTON_REWINDING){
+    rwt_pop();
+    exit;
+}
+
+movement_player();
+
+rwt_push();
 </string>
           </argument>
         </arguments>
@@ -98,6 +107,13 @@ get_input();
             <kind>1</kind>
             <string>//Draws the player with the right sprite , position, direction and animationspeed
 draw_player();
+
+var tiles = tile_get_ids_at_depth(59);
+for (var i = 0; i &lt; array_length_1d(tiles); i++;)
+   {
+   tile_set_blend(tiles[i], c_gray);
+   }
+background_blend = c_gray;
 </string>
           </argument>
         </arguments>

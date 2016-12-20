@@ -37,6 +37,7 @@
       <sprite>sprites\Spr_bricktile2</sprite>
       <sprite>sprites\Spr_bricktile3</sprite>
       <sprite>sprites\Spr_bricktile4</sprite>
+      <sprite>sprites\sprite32</sprite>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\spr_healthpot</sprite>
@@ -51,6 +52,7 @@
     <sprites name="Character">
       <sprite>sprites\C_healthbar_vol</sprite>
       <sprite>sprites\C_healthbar_leeg</sprite>
+      <sprite>sprites\spr_player_run_new</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -62,6 +64,9 @@
     <background>background\tile_wall</background>
     <background>background\tile_stone</background>
     <background>background\tile_wood</background>
+    <background>background\tileset_dungeon</background>
+    <background>background\tileset_bg</background>
+    <background>background\bg_dungeon</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -73,8 +78,16 @@
     <scripts name="Obstacles">
       <script>scripts\drop_box.gml</script>
     </scripts>
+    <scripts name="Rewinding">
+      <script>scripts\rwt_init.gml</script>
+      <script>scripts\rwt_pop.gml</script>
+      <script>scripts\rwt_push.gml</script>
+    </scripts>
     <script>scripts\get_input.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_devbox</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_box</object>
@@ -101,9 +114,12 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
+  <constants number="1">
+    <constant name="VERSION_TEXT">"ALPHA VERSION"</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
