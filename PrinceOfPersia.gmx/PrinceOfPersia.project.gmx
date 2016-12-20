@@ -53,6 +53,10 @@
       <sprite>sprites\C_healthbar_vol</sprite>
       <sprite>sprites\C_healthbar_leeg</sprite>
       <sprite>sprites\spr_player_run_new</sprite>
+      <sprite>sprites\spr_player_jump_a</sprite>
+      <sprite>sprites\spr_player_jump_b</sprite>
+      <sprite>sprites\spr_player_jump_c</sprite>
+      <sprite>sprites\spr_player_idle_new</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">

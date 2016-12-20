@@ -1,8 +1,10 @@
-if(ds_stack_size(capsule) > 2){
+if(ds_list_size(capsule) > 2){
 
     var frame;
-    frame = ds_stack_pop(capsule);
-    frame = ds_stack_pop(capsule);
+    ds_list_delete(capsule, 0);
+    
+    frame = ds_list_find_value(capsule,0);
+    
     switch (object_index)
     {
         case obj_box: 
@@ -17,8 +19,9 @@ if(ds_stack_size(capsule) > 2){
             sprite_index = ds_map_find_value(frame, "sprite_index");
             image_index = ds_map_find_value(frame, "image_index");
             xprevious = ds_map_find_value(frame, "xprevious");
-            show_debug_message("Rewinding stack: "+string(ds_stack_size(capsule)));
+            show_debug_message("Rewinding stack: "+string(ds_list_size(capsule)));
         break;
     }
     ds_map_destroy(frame);
+    ds_list_delete(capsule, 0);
 }

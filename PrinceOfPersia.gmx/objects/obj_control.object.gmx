@@ -109,6 +109,16 @@ draw_set_valign(fa_top);
 
 draw_set_colour(c_white);
 draw_text(10,10,VERSION_TEXT);
+
+var ww, ll, ratio;
+ww = view_wview /2;
+hh = view_hview - 40;
+ll = 240;
+hl = 10;
+
+ratio = ds_list_size(obj_player.capsule) / obj_player.stack_size;
+
+draw_rectangle(ww-(ll/2),hh,ww-(ll/2)+(ratio*ll),hh+hl,false);
 </string>
           </argument>
         </arguments>

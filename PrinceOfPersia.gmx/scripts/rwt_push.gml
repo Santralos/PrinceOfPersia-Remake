@@ -1,5 +1,5 @@
-if(ds_stack_size(capsule) >= stack_size){
-    exit;
+if(ds_list_size(capsule) >= stack_size){
+    ds_list_delete(capsule,ds_list_size(capsule)-1);
 }
 
 var frame;   
@@ -25,6 +25,5 @@ switch (object_index)
     
 }
 
-ds_stack_push(capsule, frame);
-
+ds_list_insert(capsule,0,frame);
 

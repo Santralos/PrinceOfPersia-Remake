@@ -8,4 +8,5 @@ globalvar BUTTON_REWINDING;
 BUTTON_LEFT = keyboard_check(ord("A"));
 BUTTON_RIGHT = keyboard_check(ord("D"));
 BUTTON_RUNNING = keyboard_check(vk_lshift);
-BUTTON_REWINDING = keyboard_check(vk_space);
+BUTTON_REWINDING = keyboard_check(vk_lcontrol);
+BUTTON_JUMPING = keyboard_check(vk_space);
