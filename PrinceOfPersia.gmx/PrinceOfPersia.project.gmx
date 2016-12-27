@@ -6,6 +6,19 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Main Menu">
+      <sprite>sprites\spr_Bergen</sprite>
+      <sprite>sprites\spr_Bergen2</sprite>
+      <sprite>sprites\spr_Bergen3</sprite>
+      <sprite>sprites\spr_POP</sprite>
+      <sprite>sprites\spr_NewGame</sprite>
+      <sprite>sprites\spr_Continue</sprite>
+      <sprite>sprites\spr_Options</sprite>
+      <sprite>sprites\spr_Credits</sprite>
+      <sprite>sprites\spr_Help</sprite>
+      <sprite>sprites\spr_Moon</sprite>
+      <sprite>sprites\spr_Twinkle</sprite>
+    </sprites>
     <sprites name="Placeholders">
       <sprites name="Player">
         <sprite>sprites\spr_player_pickup</sprite>
@@ -20,18 +33,32 @@
       <sprite>sprites\spr_fakkel</sprite>
       <sprite>sprites\spr_spikes</sprite>
       <sprite>sprites\Spr_bar</sprite>
-      <sprite>sprites\spr_sharkgate</sprite>
+
+      <sprite>sprites\Spr_bricktile</sprite>
+      <sprite>sprites\Spr_bricktile2</sprite>
+      <sprite>sprites\Spr_bricktile3</sprite>
+      <sprite>sprites\Spr_bricktile4</sprite>
+      <sprite>sprites\sprite32</sprite>
+
     </sprites>
     <sprites name="Items">
       <sprite>sprites\spr_healthpot</sprite>
+      <sprite>sprites\spr_vaas</sprite>
+      <sprite>sprites\spr_explosie_opengameart_org</sprite>
     </sprites>
     <sprites name="Menu">
       <sprite>sprites\M_button_clicked</sprite>
       <sprite>sprites\M_button</sprite>
+      <sprite>sprites\spr_GameOver</sprite>
     </sprites>
     <sprites name="Character">
       <sprite>sprites\C_healthbar_vol</sprite>
       <sprite>sprites\C_healthbar_leeg</sprite>
+      <sprite>sprites\spr_player_run_new</sprite>
+      <sprite>sprites\spr_player_jump_a</sprite>
+      <sprite>sprites\spr_player_jump_b</sprite>
+      <sprite>sprites\spr_player_jump_c</sprite>
+      <sprite>sprites\spr_player_idle_new</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -43,6 +70,9 @@
     <background>background\tile_wall</background>
     <background>background\tile_stone</background>
     <background>background\tile_wood</background>
+    <background>background\tileset_dungeon</background>
+    <background>background\tileset_bg</background>
+    <background>background\bg_dungeon</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -54,8 +84,16 @@
     <scripts name="Obstacles">
       <script>scripts\drop_box.gml</script>
     </scripts>
+    <scripts name="Rewinding">
+      <script>scripts\rwt_init.gml</script>
+      <script>scripts\rwt_pop.gml</script>
+      <script>scripts\rwt_push.gml</script>
+    </scripts>
     <script>scripts\get_input.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_devbox</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_box</object>
@@ -69,10 +107,28 @@
       <object>objects\obj_fakkel</object>
       <object>objects\obj_sharkgate</object>
     </objects>
+    <objects name="Menu">
+      <object>objects\obj_bergen</object>
+      <object>objects\obj_bergen2</object>
+      <object>objects\obj_Bergen3</object>
+      <object>objects\Titel</object>
+      <object>objects\obj_Button</object>
+      <object>objects\obj_Continue</object>
+      <object>objects\obj_NewGame</object>
+      <object>objects\obj_Options</object>
+      <object>objects\obj_Credits</object>
+      <object>objects\obj_help</object>
+      <object>objects\obj_Moon</object>
+      <object>objects\obj_twinkle</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
+  <constants number="1">
+    <constant name="VERSION_TEXT">"ALPHA VERSION"</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

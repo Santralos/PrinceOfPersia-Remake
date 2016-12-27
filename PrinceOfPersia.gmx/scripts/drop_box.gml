@@ -1,3 +1,4 @@
+/*
 var lx, ly, lw;
 
 lw = sprite_get_width(spr_box);
