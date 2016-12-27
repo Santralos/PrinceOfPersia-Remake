@@ -31,6 +31,7 @@ if (!place_free(x+hsp,y)){
     hsp = 0;
 }
 
+
 x += hsp;
 
 //Vertical Collision

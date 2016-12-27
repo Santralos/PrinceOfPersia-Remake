@@ -78,9 +78,9 @@ image_index = 0;
 hit = instance_place(x,y,obj_player)
 if (hit != noone){
 if (image_index &gt;= 12){
-//sprite veranderen &amp; timer om terug te veranderen
-//hit.alarm[0] = 2;
-}}
+with(hit){
+instance_create(x+32,y+30,obj_gorepart);
+}}}
 
 </string>
           </argument>

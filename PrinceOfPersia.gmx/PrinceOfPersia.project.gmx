@@ -33,11 +33,13 @@
       <sprite>sprites\spr_fakkel</sprite>
       <sprite>sprites\spr_spikes</sprite>
       <sprite>sprites\Spr_bar</sprite>
+
       <sprite>sprites\Spr_bricktile</sprite>
       <sprite>sprites\Spr_bricktile2</sprite>
       <sprite>sprites\Spr_bricktile3</sprite>
       <sprite>sprites\Spr_bricktile4</sprite>
       <sprite>sprites\sprite32</sprite>
+
     </sprites>
     <sprites name="Items">
       <sprite>sprites\spr_healthpot</sprite>
@@ -99,9 +101,12 @@
     <object>objects\obj_solid</object>
     <object>objects\obj_control</object>
     <objects name="Environment">
-      <object>objects\obj_fakkel</object>
       <object>objects\obj_spikes</object>
       <object>objects\obj_spikespart</object>
+      <object>objects\obj_gorepart</object>
+      <object>objects\obj_sharkgatepart</object>
+      <object>objects\obj_fakkel</object>
+      <object>objects\obj_sharkgate</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_bergen</object>
