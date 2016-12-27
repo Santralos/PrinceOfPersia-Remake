@@ -50,21 +50,36 @@ image_speed =0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(image_speed == 0 &amp;&amp; image_index == 0){
-if(random(1000)&lt;=3){
+            <string>//popout
+if(image_speed == 0 &amp;&amp; image_index == 0){
+if(random(5000)&lt;=30){
 image_index =1;
-image_speed = 0.1;}}
-
-if(image_index == 6){
+image_speed = 0.2;}}
+//popin
+if(image_index &gt;= 6){
 image_speed = 0;
 if(random(100)&lt;=2)
-image_speed = -0.1;}
+image_speed = -0.2;}
+//stillframe
+if(image_index &lt;= 0){
+image_speed = 0;
+image_index = 0;}
 
-if(image_index == 0){
-image_speed = 0}
-
+//create particle instance
 if(image_index == 5 &amp;&amp; image_speed &gt; 0){
 instance_create(x+32,y+5,obj_sharkgatepart);}
+
+//collission with player
+hit = instance_place(x,y,obj_player)
+if (hit != noone){
+if(image_index &gt;=5){
+///player can't move
+}
+if(image_index &gt;= 3 &amp;&amp; image_index &lt;5 &amp;&amp; image_speed&gt;0){
+with(hit){
+instance_create(x+32,y,obj_gorepart);
+}}}
+
 </string>
           </argument>
         </arguments>

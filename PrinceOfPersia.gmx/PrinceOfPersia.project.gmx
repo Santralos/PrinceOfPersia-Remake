@@ -20,6 +20,7 @@
       <sprite>sprites\spr_fakkel</sprite>
       <sprite>sprites\spr_spikes</sprite>
       <sprite>sprites\Spr_bar</sprite>
+      <sprite>sprites\spr_sharkgate</sprite>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\spr_healthpot</sprite>
@@ -63,7 +64,10 @@
     <objects name="Environment">
       <object>objects\obj_spikes</object>
       <object>objects\obj_spikespart</object>
+      <object>objects\obj_gorepart</object>
+      <object>objects\obj_sharkgatepart</object>
       <object>objects\obj_fakkel</object>
+      <object>objects\obj_sharkgate</object>
     </objects>
   </objects>
   <rooms name="rooms">

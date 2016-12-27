@@ -28,7 +28,7 @@
             <string>alarm[0] = 10;
 //cloudparticeles
 cloud = part_system_create();
-part_system_depth(cloud,-1);
+part_system_depth(cloud,-3);
 
 wolk = part_type_create();
 part_type_shape(wolk,pt_shape_cloud);
