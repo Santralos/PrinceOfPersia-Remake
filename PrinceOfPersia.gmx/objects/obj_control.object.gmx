@@ -104,11 +104,8 @@ alarm[0] = drop_rate;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fnt_devbox);
-draw_set_valign(fa_top);
-
-draw_set_colour(c_white);
-draw_text(10,10,VERSION_TEXT);
+            <string>
+draw_debug(10,10);
 
 var ww, ll, ratio;
 ww = view_wview /2;

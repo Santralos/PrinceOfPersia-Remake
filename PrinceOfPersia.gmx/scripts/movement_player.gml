@@ -11,6 +11,7 @@ if(BUTTON_JUMPING){
         //jump
         vsp = -jump_speed;
         STUNNED = true;
+        alarm[0] = (1/anim_jump_speed_a) * sprite_get_number(spr_player_jump_a);
         sprite_index = spr_player_jump_a;
         image_index = 0;
         image_speed = anim_jump_speed_a;
@@ -33,13 +34,14 @@ if (!place_free(x+hsp,y)){
 x += hsp;
 
 //Vertical Collision
-if (!place_free(x,y+vsp)){
+if (!place_free(x,y+ceil(vsp))){
     while(place_free(x,y+sign(vsp))){
         y += sign(vsp);
     }
     vsp = 0;
     if(y != yprevious){
         STUNNED = true;
+        alarm[0] = (1/anim_jump_speed_c) * sprite_get_number(spr_player_jump_c);
         sprite_index = spr_player_jump_c;
         image_index  = 0;
         image_speed  = anim_jump_speed_c;

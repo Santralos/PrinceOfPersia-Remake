@@ -88,6 +88,7 @@
       <script>scripts\rwt_push.gml</script>
     </scripts>
     <script>scripts\get_input.gml</script>
+    <script>scripts\draw_debug.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_devbox</font>
