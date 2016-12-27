@@ -76,19 +76,7 @@ sprite_index = spr_player_idle_new;
         <arguments>
           <argument>
             <kind>1</kind>
-
-            <string>if(BUTTON_REWINDING){
-    rwt_pop();
-    exit;
-}
-if(STUNNED){
-
-    //img_index = image_index;
-}else{
-    movement_player();
-}
-
-
+            <string>get_input();
 
 </string>
           </argument>
