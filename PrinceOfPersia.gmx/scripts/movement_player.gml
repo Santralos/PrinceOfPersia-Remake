@@ -3,6 +3,28 @@ var hsp;
 var msp;
 
 msp = walking_speed;
+
+if(place_meeting(x,y, obj_solid)){
+    var block;
+    var x_diff;
+    var y_diff;
+    
+    block = instance_place( x, y, obj_solid );
+    show_debug_message("instance id: "+string(block));
+    x_diff = x - (block.x + 16);
+    y_diff = y - (block.y + 16);
+    
+    if(abs(x_diff) > abs(y_diff)){
+        while(place_meeting(x,y,block)){
+            x += sign(x_diff);
+        }
+    }else{
+        while(place_meeting(x,y,block)){
+            y += sign(y_diff);
+        }
+    }
+}
+
 if(BUTTON_RUNNING){
     msp = running_speed;
 }
@@ -50,3 +72,5 @@ if (!place_free(x,y+ceil(vsp))){
 }
 
 y += vsp;
+
+

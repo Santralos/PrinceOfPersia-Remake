@@ -57,6 +57,8 @@
       <sprite>sprites\spr_player_jump_b</sprite>
       <sprite>sprites\spr_player_jump_c</sprite>
       <sprite>sprites\spr_player_idle_new</sprite>
+      <sprite>sprites\spr_player_block</sprite>
+      <sprite>sprites\spr_player_attack</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
