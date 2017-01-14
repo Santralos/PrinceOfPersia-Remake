@@ -4,6 +4,7 @@ var msp;
 
 msp = walking_speed;
 
+/*
 if(place_meeting(x,y, obj_solid)){
     var block;
     var x_diff;
@@ -24,7 +25,7 @@ if(place_meeting(x,y, obj_solid)){
         }
     }
 }
-
+*/
 if(BUTTON_RUNNING){
     msp = running_speed;
 }
@@ -61,16 +62,15 @@ if (!place_free(x,y+ceil(vsp))){
     while(place_free(x,y+sign(vsp))){
         y += sign(vsp);
     }
-    vsp = 0;
-    if(y != yprevious){
+    if(vsp > 0 && y != yprevious){
         STUNNED = true;
         alarm[0] = (1/anim_jump_speed_c) * sprite_get_number(spr_player_jump_c);
         sprite_index = spr_player_jump_c;
         image_index  = 0;
         image_speed  = anim_jump_speed_c;
     }
+    vsp = 0;
 }
 
 y += vsp;
-
 
