@@ -38,9 +38,13 @@
       <sprite>sprites\Spr_bricktile3</sprite>
       <sprite>sprites\Spr_bricktile4</sprite>
       <sprite>sprites\sprite32</sprite>
+      <sprite>sprites\Spr_ship_frtile</sprite>
+      <sprite>sprites\Spr_ship_backtile</sprite>
+      <sprite>sprites\Spr_table</sprite>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\spr_healthpot</sprite>
+      <sprite>sprites\spr_sandbag</sprite>
       <sprite>sprites\spr_vaas</sprite>
       <sprite>sprites\spr_explosie_opengameart_org</sprite>
     </sprites>
