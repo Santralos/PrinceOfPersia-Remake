@@ -57,13 +57,13 @@ if(image_index == 0){
 if(random(1500) &lt;= 10){
 image_index =5;
 image_speed =0.7;
-instance_create(x+32,y+60,obj_spikespart);}}
+instance_create(x+32,y+76,obj_spikespart);}}
 //popin
 else if(image_index == 17){
 if(random(500) &lt;= 10){
 image_index =12;
 image_speed =-0.7;
-instance_create(x+32,y+60,obj_spikespart);}}}
+instance_create(x+32,y+76,obj_spikespart);}}}
 //still frame
 else if(image_index &gt;12){
 image_speed = 0;

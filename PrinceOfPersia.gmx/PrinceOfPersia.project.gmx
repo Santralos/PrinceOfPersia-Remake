@@ -30,7 +30,6 @@
     <sprite>sprites\spr_box</sprite>
     <sprite>sprites\spr_solid</sprite>
     <sprites name="Environment">
-      <sprite>sprites\spr_fakkel</sprite>
       <sprite>sprites\spr_spikes</sprite>
       <sprite>sprites\Spr_bar</sprite>
       <sprite>sprites\Spr_bricktile</sprite>
@@ -41,12 +40,17 @@
       <sprite>sprites\Spr_ship_frtile</sprite>
       <sprite>sprites\Spr_ship_backtile</sprite>
       <sprite>sprites\Spr_table</sprite>
+      <sprite>sprites\spr_crate</sprite>
+      <sprite>sprites\spr_door</sprite>
+      <sprite>sprites\spr_fakkel</sprite>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\spr_healthpot</sprite>
       <sprite>sprites\spr_sandbag</sprite>
       <sprite>sprites\spr_vaas</sprite>
       <sprite>sprites\spr_explosie_opengameart_org</sprite>
+      <sprite>sprites\spr_chain</sprite>
+      <sprite>sprites\spr_chainsparkle</sprite>
     </sprites>
     <sprites name="Menu">
       <sprite>sprites\M_button_clicked</sprite>
@@ -108,9 +112,10 @@
       <object>objects\obj_spikes</object>
       <object>objects\obj_spikespart</object>
       <object>objects\obj_gorepart</object>
-      <object>objects\obj_sharkgatepart</object>
       <object>objects\obj_fakkel</object>
-      <object>objects\obj_sharkgate</object>
+      <object>objects\obj_crate</object>
+      <object>objects\object23</object>
+      <object>objects\obj_door</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_bergen</object>
@@ -125,6 +130,10 @@
       <object>objects\obj_help</object>
       <object>objects\obj_Moon</object>
       <object>objects\obj_twinkle</object>
+    </objects>
+    <objects name="Items">
+      <object>objects\obj_chainsparkle</object>
+      <object>objects\obj_chain</object>
     </objects>
   </objects>
   <rooms name="rooms">
