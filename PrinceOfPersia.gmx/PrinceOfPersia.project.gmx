@@ -115,7 +115,6 @@
       <object>objects\obj_gorepart</object>
       <object>objects\obj_fakkel</object>
       <object>objects\obj_crate</object>
-      <object>objects\object23</object>
       <object>objects\obj_door</object>
     </objects>
     <objects name="Menu">
