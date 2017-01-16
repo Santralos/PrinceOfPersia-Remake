@@ -38,7 +38,10 @@
       <sprite>sprites\Spr_bricktile4</sprite>
       <sprite>sprites\sprite32</sprite>
       <sprite>sprites\Spr_ship_frtile</sprite>
+      <sprite>sprites\Spr_Pillar_tile</sprite>
+      <sprite>sprites\Spr_ship_tile</sprite>
       <sprite>sprites\Spr_ship_backtile</sprite>
+      <sprite>sprites\Spr_ship_tileback</sprite>
       <sprite>sprites\Spr_table</sprite>
       <sprite>sprites\spr_crate</sprite>
       <sprite>sprites\spr_door</sprite>
