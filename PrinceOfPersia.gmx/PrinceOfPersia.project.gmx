@@ -82,6 +82,7 @@
     <background>background\tileset_bg</background>
     <background>background\bg_dungeon</background>
     <background>background\bg_desert</background>
+    <background>background\desert_tile</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
