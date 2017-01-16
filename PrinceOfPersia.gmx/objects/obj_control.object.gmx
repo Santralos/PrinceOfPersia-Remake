@@ -27,6 +27,10 @@
             <kind>1</kind>
             <string>//Globals
 globalvar current_step;
+globalvar DEBUGGING;
+
+DEBUGGING = false;
+
 current_step = 1;
 
 drop_rate = room_speed * 2.5;
@@ -82,6 +86,10 @@ alarm[0] = drop_rate;
           <argument>
             <kind>1</kind>
             <string>current_step++;
+
+if(BUTTON_DEBUG){
+    DEBUGGING = !DEBUGGING;
+}
 </string>
           </argument>
         </arguments>

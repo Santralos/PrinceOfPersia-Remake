@@ -46,6 +46,7 @@ move = BUTTON_RIGHT - BUTTON_LEFT;
 hsp = move * msp;
 vsp = vsp + grav;
 
+
 //Horizontal Collision
 if (!place_free(x+hsp,y)){
     while(place_free(x+sign(hsp),y)){
@@ -73,4 +74,4 @@ if (!place_free(x,y+ceil(vsp))){
 }
 
 y += vsp;
-
+y = round(y);

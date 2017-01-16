@@ -81,6 +81,7 @@
     <background>background\tileset_dungeon</background>
     <background>background\tileset_bg</background>
     <background>background\bg_dungeon</background>
+    <background>background\bg_desert</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -140,7 +141,8 @@
     <room>rooms\room0</room>
     <room>rooms\room1</room>
   </rooms>
-  <constants number="1">
+  <constants number="2">
+    <constant name="DEBUG_ALLOWED">true</constant>
     <constant name="VERSION_TEXT">"ALPHA VERSION"</constant>
   </constants>
   <help>

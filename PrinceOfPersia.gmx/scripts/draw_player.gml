@@ -35,3 +35,8 @@ if(hdir != 0 && vsp==0 && !STUNNED){
 }
 
 draw_self();
+
+if(!DEBUG_ALLOWED || !DEBUGGING){
+    exit;
+}
+draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,1);

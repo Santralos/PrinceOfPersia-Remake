@@ -3,8 +3,11 @@ globalvar BUTTON_RIGHT;
 globalvar BUTTON_RUNNING;
 globalvar BUTTON_COMBAT;
 globalvar BUTTON_REWINDING;
+globalvar BUTTON_DEBUG;
 
 //For keyboard
+BUTTON_DEBUG = keyboard_check_pressed(vk_f2);
+
 BUTTON_LEFT = keyboard_check(ord("A"));
 BUTTON_RIGHT = keyboard_check(ord("D"));
 
