@@ -46,6 +46,11 @@
       <sprite>sprites\spr_crate</sprite>
       <sprite>sprites\spr_door</sprite>
       <sprite>sprites\spr_fakkel</sprite>
+      <sprites name="Healthstations">
+        <sprite>sprites\spr_healthstation1</sprite>
+        <sprite>sprites\spr_healthstation2</sprite>
+        <sprite>sprites\spr_healthstation3</sprite>
+      </sprites>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\spr_healthpot</sprite>
@@ -120,6 +125,11 @@
       <object>objects\obj_fakkel</object>
       <object>objects\obj_crate</object>
       <object>objects\obj_door</object>
+      <objects name="Healthstations">
+        <object>objects\obj_healthstation1</object>
+        <object>objects\obj_healthstation3</object>
+        <object>objects\obj_healthstation2</object>
+      </objects>
     </objects>
     <objects name="Menu">
       <object>objects\obj_bergen</object>
