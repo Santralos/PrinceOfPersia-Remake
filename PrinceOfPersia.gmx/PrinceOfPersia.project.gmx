@@ -51,6 +51,7 @@
         <sprite>sprites\spr_healthstation2</sprite>
         <sprite>sprites\spr_healthstation3</sprite>
       </sprites>
+      <sprite>sprites\market</sprite>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\spr_healthpot</sprite>
