@@ -3,7 +3,7 @@
   <spriteName>spr_chain</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -55,8 +55,8 @@ sparky = random(64)-32;
 instance_create(x+sparkx, y+sparky, obj_chainsparkle);}
 
 timerv+=1;
-if(timerv&lt;=45)y+=.25;
-else if(timerv&lt;=90)y-=.25;
+if(timerv&lt;=45)y+=0.25;
+else if(timerv&lt;=90)y-=0.25;
 else timerv=0;
 </string>
           </argument>

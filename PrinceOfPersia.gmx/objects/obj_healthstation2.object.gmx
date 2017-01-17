@@ -3,7 +3,7 @@
   <spriteName>spr_healthstation2</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>5</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -30,7 +30,7 @@ image_speed=0.25;
 
 //splashwaterparticeles
 water = part_system_create();
-part_system_depth(water,-3);
+part_system_depth(water,4);
 
 droplet = part_type_create();
 part_type_shape(droplet,pt_shape_flare);
