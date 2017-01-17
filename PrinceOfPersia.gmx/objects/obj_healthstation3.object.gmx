@@ -42,16 +42,16 @@ part_type_life(droplet,15,25);
 part_type_colour2(droplet, c_aqua, c_white);
 
 water_emitter = part_emitter_create(droplet);
-part_emitter_region(droplet, water_emitter, x-54,x+54,y-12,y-5,ps_shape_ellipse,ps_distr_linear);
-part_emitter_stream(droplet, water_emitter, water, 4);
+part_emitter_region(droplet, water_emitter, x-108,x+108,y-21,y-10,ps_shape_ellipse,ps_distr_linear);
+part_emitter_stream(droplet, water_emitter, water, 10);
 
 water_emitter2 = part_emitter_create(droplet);
-part_emitter_region(droplet, water_emitter2, x-42,x+42,y-42,y-35,ps_shape_ellipse,ps_distr_linear);
-part_emitter_stream(droplet, water_emitter2, water, 3);
+part_emitter_region(droplet, water_emitter2, x-84,x+84,y-81,y-70,ps_shape_ellipse,ps_distr_linear);
+part_emitter_stream(droplet, water_emitter2, water, 7);
 
 water_emitter3 = part_emitter_create(droplet);
-part_emitter_region(droplet, water_emitter3, x-30,x+30,y-67,y-60,ps_shape_ellipse,ps_distr_linear);
-part_emitter_stream(droplet, water_emitter3, water, 2);
+part_emitter_region(droplet, water_emitter3, x-60,x+60,y-131,y-120,ps_shape_ellipse,ps_distr_linear);
+part_emitter_stream(droplet, water_emitter3, water, 5);
 </string>
           </argument>
         </arguments>

@@ -35,15 +35,15 @@ part_system_depth(water,4);
 droplet = part_type_create();
 part_type_shape(droplet,pt_shape_flare);
 part_type_orientation(droplet,0,0,0,0,0);
-part_type_size(droplet,0.07,0.08,-0.0005,0);
+part_type_size(droplet,0.07,0.08,-0.001,0);
 part_type_speed(droplet,0.1,0.4,0,0);
 part_type_direction(droplet,20,160,0,0);
 part_type_life(droplet,15,25);
 part_type_colour1(droplet, c_white);
 
 water_emitter = part_emitter_create(droplet);
-part_emitter_region(droplet, water_emitter, x-10,x+10,y-7,y-0,ps_shape_ellipse,ps_distr_linear);
-part_emitter_stream(droplet, water_emitter, water, 1);
+part_emitter_region(droplet, water_emitter, x-20,x+20,y-14,y-0,ps_shape_ellipse,ps_distr_linear);
+part_emitter_stream(droplet, water_emitter, water, 2);
 </string>
           </argument>
         </arguments>
