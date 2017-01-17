@@ -88,6 +88,13 @@
     <background>background\tile_stone</background>
     <background>background\tile_wood</background>
     <background>background\tileset_dungeon</background>
+    <background>background\dersertroof_midden</background>
+    <background>background\desertroof_links</background>
+    <background>background\desertroof_rechts</background>
+    <background>background\desertroof_rechtsonder</background>
+    <background>background\desertroof_linksonder</background>
+    <background>background\desertroof_boven</background>
+    <background>background\desertroof_onder</background>
     <background>background\tileset_bg</background>
     <background>background\bg_dungeon</background>
     <background>background\bg_desert</background>

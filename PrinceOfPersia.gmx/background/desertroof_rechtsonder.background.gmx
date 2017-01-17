@@ -8,12 +8,12 @@
   <tilehsep>0</tilehsep>
   <tilevsep>0</tilevsep>
   <HTile>-1</HTile>
-  <VTile>-1</VTile>
+  <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
   <width>16</width>
   <height>16</height>
-  <data>images\desertroof_onderlinks.png</data>
+  <data>images\desertroof_rechtsonder.png</data>
 </background>
