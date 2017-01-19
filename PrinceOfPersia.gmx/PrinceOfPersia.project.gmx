@@ -31,6 +31,8 @@
     <sprite>sprites\spr_solid</sprite>
     <sprites name="Environment">
       <sprite>sprites\spr_spikes</sprite>
+      <sprite>sprites\spr_zeespiegel</sprite>
+      <sprite>sprites\spr_zee</sprite>
       <sprite>sprites\Spr_bar</sprite>
       <sprite>sprites\Spr_bricktile</sprite>
       <sprite>sprites\Spr_bricktile2</sprite>
