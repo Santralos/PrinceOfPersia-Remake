@@ -56,6 +56,15 @@
         <sprite>sprites\spr_healthstation3</sprite>
       </sprites>
       <sprite>sprites\market</sprite>
+      <sprite>sprites\rudder</sprite>
+      <sprite>sprites\sprite56</sprite>
+      <sprite>sprites\sail1</sprite>
+      <sprite>sprites\sail2</sprite>
+      <sprite>sprites\sail3</sprite>
+      <sprite>sprites\sail4</sprite>
+      <sprite>sprites\sail5</sprite>
+      <sprite>sprites\sailwood</sprite>
+      <sprite>sprites\sailwood2</sprite>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\spr_healthpot</sprite>
