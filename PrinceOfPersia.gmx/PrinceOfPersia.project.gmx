@@ -90,6 +90,12 @@
       <sprite>sprites\spr_player_block</sprite>
       <sprite>sprites\spr_player_attack</sprite>
     </sprites>
+    <sprites name="Boss 2">
+      <sprite>sprites\spr_boss2_static</sprite>
+      <sprite>sprites\spr_boss2_walktemp</sprite>
+      <sprite>sprites\spr_boss2_walk32</sprite>
+      <sprite>sprites\spr_boss2_walk96</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\tile_dungeon</background>
@@ -169,6 +175,9 @@
     <objects name="Items">
       <object>objects\obj_chainsparkle</object>
       <object>objects\obj_chain</object>
+    </objects>
+    <objects name="Bosses">
+      <object>objects\obj_boss2</object>
     </objects>
   </objects>
   <rooms name="rooms">
