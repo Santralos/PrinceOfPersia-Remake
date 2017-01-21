@@ -31,6 +31,8 @@
     <sprite>sprites\spr_solid</sprite>
     <sprites name="Environment">
       <sprite>sprites\spr_spikes</sprite>
+      <sprite>sprites\spr_zeespiegel</sprite>
+      <sprite>sprites\spr_zee</sprite>
       <sprite>sprites\Spr_bar</sprite>
       <sprite>sprites\Spr_bricktile</sprite>
       <sprite>sprites\Spr_bricktile2</sprite>
@@ -42,6 +44,8 @@
       <sprite>sprites\Spr_ship_tile</sprite>
       <sprite>sprites\Spr_ship_backtile</sprite>
       <sprite>sprites\Spr_ship_tileback</sprite>
+      <sprite>sprites\spr_ship_mast</sprite>
+      <sprite>sprites\spr_ship_reling</sprite>
       <sprite>sprites\Spr_table</sprite>
       <sprite>sprites\spr_crate</sprite>
       <sprite>sprites\spr_door</sprite>
@@ -52,6 +56,15 @@
         <sprite>sprites\spr_healthstation3</sprite>
       </sprites>
       <sprite>sprites\market</sprite>
+      <sprite>sprites\rudder</sprite>
+      <sprite>sprites\sprite56</sprite>
+      <sprite>sprites\sail1</sprite>
+      <sprite>sprites\sail2</sprite>
+      <sprite>sprites\sail3</sprite>
+      <sprite>sprites\sail4</sprite>
+      <sprite>sprites\sail5</sprite>
+      <sprite>sprites\sailwood</sprite>
+      <sprite>sprites\sailwood2</sprite>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\spr_healthpot</sprite>
@@ -80,6 +93,11 @@
     <sprites name="Enemy">
       <sprite>sprites\spr_enemy_idle</sprite>
       <sprite>sprites\spr_enemy_walking</sprite>
+    <sprites name="Boss 2">
+      <sprite>sprites\spr_boss2_static</sprite>
+      <sprite>sprites\spr_boss2_walktemp</sprite>
+      <sprite>sprites\spr_boss2_walk32</sprite>
+      <sprite>sprites\spr_boss2_walk96</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -169,7 +187,13 @@
       <object>objects\obj_chainsparkle</object>
       <object>objects\obj_chain</object>
     </objects>
+<<<<<<< HEAD
     <object>objects\obj_enemy</object>
+=======
+    <objects name="Bosses">
+      <object>objects\obj_boss2</object>
+    </objects>
+>>>>>>> origin/master
   </objects>
   <rooms name="rooms">
     <room>rooms\room2</room>
