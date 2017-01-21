@@ -91,10 +91,27 @@
       <sprite>sprites\spr_player_attack</sprite>
     </sprites>
     <sprites name="Boss 2">
-      <sprite>sprites\spr_boss2_static</sprite>
-      <sprite>sprites\spr_boss2_walktemp</sprite>
-      <sprite>sprites\spr_boss2_walk32</sprite>
-      <sprite>sprites\spr_boss2_walk96</sprite>
+      <sprite>sprites\spr_boss2_idle</sprite>
+      <sprite>sprites\spr_boss2_walk</sprite>
+      <sprite>sprites\spr_boss2_attack</sprite>
+      <sprite>sprites\spr_boss2_blocka</sprite>
+      <sprite>sprites\spr_boss2_blockb</sprite>
+      <sprite>sprites\spr_boss2_barrelroll</sprite>
+      <sprite>sprites\spr_boss2_barrelthrow</sprite>
+      <sprite>sprites\spr_boss2_barrel</sprite>
+      <sprites name="original sprites">
+        <sprite>sprites\spr_boss2_idle32</sprite>
+        <sprite>sprites\spr_boss2_walk32</sprite>
+        <sprite>sprites\spr_boss2_attack32</sprite>
+        <sprite>sprites\spr_boss2_block32</sprite>
+        <sprite>sprites\spr_boss2_barrelroll32</sprite>
+        <sprite>sprites\spr_boss2_barrelthrow32</sprite>
+        <sprite>sprites\spr_boss2_barrel32</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Princess">
+      <sprite>sprites\spr_princess32</sprite>
+      <sprite>sprites\spr_princess_idle32</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -177,7 +194,7 @@
       <object>objects\obj_chain</object>
     </objects>
     <objects name="Bosses">
-      <object>objects\obj_boss2</object>
+      <object>objects\obj_boss2_test_</object>
     </objects>
   </objects>
   <rooms name="rooms">
