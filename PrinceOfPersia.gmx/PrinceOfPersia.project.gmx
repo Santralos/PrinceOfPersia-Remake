@@ -77,8 +77,15 @@
       <sprite>sprites\spr_player_block</sprite>
       <sprite>sprites\spr_player_attack</sprite>
     </sprites>
+    <sprites name="Enemy">
+      <sprite>sprites\spr_enemy_idle</sprite>
+      <sprite>sprites\spr_enemy_walking</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
+    <backgrounds name="WORLD 1">
+      <background>background\bg_world1</background>
+    </backgrounds>
     <background>background\tile_dungeon</background>
     <background>background\bg_test</background>
     <background>background\Bg_background1</background>
@@ -114,6 +121,11 @@
       <script>scripts\rwt_init.gml</script>
       <script>scripts\rwt_pop.gml</script>
       <script>scripts\rwt_push.gml</script>
+    </scripts>
+    <scripts name="Enemy">
+      <script>scripts\load_enemy.gml</script>
+      <script>scripts\draw_enemy.gml</script>
+      <script>scripts\check_enemy.gml</script>
     </scripts>
     <script>scripts\get_input.gml</script>
     <script>scripts\draw_debug.gml</script>
@@ -157,8 +169,10 @@
       <object>objects\obj_chainsparkle</object>
       <object>objects\obj_chain</object>
     </objects>
+    <object>objects\obj_enemy</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room2</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
   </rooms>

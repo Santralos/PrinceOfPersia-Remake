@@ -22,6 +22,9 @@ if(ds_list_size(capsule) > 2){
             show_debug_message("Rewinding stack: "+string(ds_list_size(capsule)));
         break;
     }
+    
     ds_map_destroy(frame);
     ds_list_delete(capsule, 0);
 }
+
+
