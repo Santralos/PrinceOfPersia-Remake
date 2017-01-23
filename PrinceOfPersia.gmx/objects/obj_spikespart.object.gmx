@@ -33,7 +33,7 @@ part_system_depth(cloud,-3);
 wolk = part_type_create();
 part_type_shape(wolk,pt_shape_cloud);
 part_type_orientation(wolk,0,10,0,0,0);
-part_type_size(wolk,0.15,0.15,-0.005,0);
+part_type_size(wolk,0.15*2,0.15*2,-0.005,0);
 part_type_speed(wolk,0.1,0.1,0,0);
 part_type_direction(wolk,0,180,0,0);
 part_type_life(wolk,20,30);

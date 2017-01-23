@@ -21,3 +21,7 @@ lever_range = 80;
 STUNNED = false;
 
 attack_state = "";
+sneak_distance = 50;
+
+tooltip = "";
+tooltip_color = c_white;

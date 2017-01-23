@@ -118,8 +118,8 @@ if(BUTTON_DEBUG){
 draw_debug(10,10);
 
 var ww, ll, ratio;
-ww = view_wview-128;
-hh = 64;
+ww = 128;
+hh = view_hview-64;
 ll = 240;
 hl = 10;
 
@@ -128,9 +128,11 @@ ratio = ds_list_size(obj_player.capsule) / obj_player.stack_size;
 draw_set_colour(c_white);
 draw_rectangle(ww-(ll/2),hh,ww-(ll/2)+(ratio*ll),hh+hl,false);
 
+hg_index += anim_hg_speed;
 if(BUTTON_REWINDING){
-    hg_index += anim_hg_speed;
-    draw_sprite(spr_hourglass, hg_index, view_wview-128,128);
+    draw_sprite(spr_hourglass_rot, hg_index, 64,view_hview-128);
+}else{
+    draw_sprite(spr_hourglass, hg_index, 64,view_hview-128);
 }
 </string>
           </argument>

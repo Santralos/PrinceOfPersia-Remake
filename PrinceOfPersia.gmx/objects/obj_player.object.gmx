@@ -100,7 +100,10 @@ sprite_index = spr_player_idle_new;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(BUTTON_REWINDING){
+            <string>tooltip = "";
+tooltip_color = c_white;
+
+if(BUTTON_REWINDING){
     rwt_pop();
     exit;
 }
@@ -203,37 +206,6 @@ background_blend = c_gray;
 
 rwt_push();
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="116">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>for (i=0; i&lt;ds_list_size(capsule); i+=1)
-{
-    ds_map_destroy(ds_list_find_value(capsule,i));
-};
-
-ds_list_destroy(capsule);
-
-
-rwt_init();
 </string>
           </argument>
         </arguments>

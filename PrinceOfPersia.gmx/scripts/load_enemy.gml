@@ -1,6 +1,10 @@
+life = 3;
+grav = 0.1;
+vsp =0;
 anim_idle_speed = 1/room_speed;
 anim_walking_speed = 0.2;
 anim_trigger_speed = 0.1;
+anim_falling_speed = 0.1;
 
 sight_level = 0;
 sight_threshold = room_speed;
@@ -17,3 +21,4 @@ hspeed = -walk_speed;
 dir = -1;
 
 t_index = 0;
+death_timer = 5*room_speed;

@@ -28,6 +28,30 @@
             <string>sprite_index = spr_spikes;
 image_index = 0;
 image_speed = 0;
+anim_speed = 0.7;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_index =0;
 </string>
           </argument>
         </arguments>
@@ -50,38 +74,56 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(image_speed == 0){
-
-if(image_index == 0){
-//popout
-if(random(1500) &lt;= 10){
-image_index =5;
-image_speed =0.7;
-instance_create(x+32,y+76,obj_spikespart);}}
-//popin
-else if(image_index == 17){
-if(random(500) &lt;= 10){
-image_index =12;
-image_speed =-0.7;
-instance_create(x+32,y+76,obj_spikespart);}}}
-//still frame
-else if(image_index &gt;12){
-image_speed = 0;
-image_index = 17;
-}
-else if(image_index &lt;5){
-image_speed = 0;
-image_index = 0;
+            <string>if(image_index != 0){
+    exit;
 }
 
 //collission with player
 hit = instance_place(x,y,obj_player)
 if (hit != noone){
-if (image_index &gt;= 12){
-with(hit){
-instance_create(x+32,y+30,obj_gorepart);
-}}}
+    with(hit){
+        instance_create(x+32,y+76,obj_spikespart);
+        lives =0;
+    }
+    image_speed = anim_speed;
+}
 
+//collission with enemy
+hit = instance_place(x,y,obj_enemy)
+if (hit != noone &amp;&amp; hit.life &gt; 0){
+    with(hit){
+        instance_create(x+32,y+76,obj_spikespart);
+        life = 0;
+        alarm[2] = 1;
+    }
+    image_speed = anim_speed;
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_speed = 0;
+image_index = image_number-1;
+alarm[0] = 3*room_speed;
 </string>
           </argument>
         </arguments>

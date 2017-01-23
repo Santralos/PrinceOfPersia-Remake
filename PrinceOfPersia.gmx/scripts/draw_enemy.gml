@@ -1,3 +1,10 @@
+if(life == 0){
+    sprite_index = spr_enemy_falling;
+    
+    draw_self();
+    exit;
+}
+
 var anim_speed;
 
 if(hspeed == 0){
@@ -27,8 +34,8 @@ var color;
 var d_player;
 var blocked;
 
-blocked = collision_line(x,y-100,obj_player.x, obj_player.y - 120,obj_solid,false,true);
-d_player = point_distance(x,y-100,obj_player.x, obj_player.y - 120);
+blocked = collision_line(x,y-100,obj_player.x, obj_player.y - 80,obj_solid,false,true);
+d_player = point_distance(x,y-100,obj_player.x, obj_player.y - 80);
 
 if(!blocked && d_player <= sight_range && sign(obj_player.x -x)==dir){
     color = c_red;

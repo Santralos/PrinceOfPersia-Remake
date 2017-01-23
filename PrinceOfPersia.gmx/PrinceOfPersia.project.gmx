@@ -69,6 +69,7 @@
       <sprite>sprites\spr_newgate</sprite>
       <sprite>sprites\spr_pp_blue</sprite>
       <sprite>sprites\spr_pp_red</sprite>
+      <sprite>sprites\spr_hourglass_rot</sprite>
       <sprite>sprites\spr_hourglass</sprite>
     </sprites>
     <sprites name="Items">
@@ -106,6 +107,7 @@
       <sprite>sprites\spr_enemy_idle</sprite>
       <sprite>sprites\spr_enemy_walking</sprite>
       <sprite>sprites\spr_enemy_trigger</sprite>
+      <sprite>sprites\spr_enemy_falling</sprite>
     </sprites>
     <sprites name="Boss 2">
       <sprite>sprites\spr_boss2_idle</sprite>
@@ -130,6 +132,7 @@
       <sprite>sprites\spr_princess32</sprite>
       <sprite>sprites\spr_princess_idle32</sprite>
     </sprites>
+    <sprite>sprites\spr_final_orb</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="WORLD 1">
@@ -173,6 +176,7 @@
       <script>scripts\switch_pressureplate.gml</script>
     </scripts>
     <scripts name="Rewinding">
+      <script>scripts\wipe_memory.gml</script>
       <script>scripts\rwt_init.gml</script>
       <script>scripts\rwt_pop.gml</script>
       <script>scripts\rwt_push.gml</script>
@@ -181,6 +185,7 @@
       <script>scripts\load_enemy.gml</script>
       <script>scripts\draw_enemy.gml</script>
       <script>scripts\check_enemy.gml</script>
+      <script>scripts\kill_enemy.gml</script>
     </scripts>
     <script>scripts\get_input.gml</script>
     <script>scripts\draw_debug.gml</script>
@@ -234,6 +239,7 @@
     <objects name="Bosses">
       <object>objects\obj_boss2_test_</object>
     </objects>
+    <object>objects\obj_final_orb</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room3</room>

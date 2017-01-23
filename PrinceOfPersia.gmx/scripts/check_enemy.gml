@@ -1,8 +1,14 @@
+if(life = 0){
+    hspeed = 0;
+    exit;
+}
+
+
 var d_player;
 var blocked;
 
-blocked = collision_line(x,y-100,obj_player.x, obj_player.y - 120,obj_solid,false,true);
-d_player = point_distance(x,y-100,obj_player.x, obj_player.y - 120);
+blocked = collision_line(x,y-100,obj_player.x, obj_player.y - 80,obj_solid,false,true);
+d_player = point_distance(x,y-100,obj_player.x, obj_player.y - 80);
 
 if(!triggered && d_player <= sight_range && !blocked && sign(obj_player.x -x)==dir){
     sight_level++;
@@ -10,6 +16,27 @@ if(!triggered && d_player <= sight_range && !blocked && sign(obj_player.x -x)==d
         triggered = true;
     }
 }
+
+vsp += grav;
+
+//Vertical Collision
+if (!place_free(x,y+ceil(vsp))){
+    var block;
+    
+    block = instance_place(x,y+ceil(vsp),obj_cracktile);
+    if(block != noone){
+        with(block){
+            if(image_speed == 0){
+                crack_tile();
+            }
+        }
+    }
+
+    vsp = 0;
+}
+
+y += vsp;
+y = round(y);
 
 if(triggered){
     //Trying to move to the player and attack him

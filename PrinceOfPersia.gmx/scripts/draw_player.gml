@@ -29,6 +29,22 @@ if(BUTTON_REWINDING && ds_list_size(capsule)> 0){
     exit;
 }
 
+//TOOLTIPS
+var r_x;
+var r_y;
+var r_a;
+
+r_x = random_range(-2,2);
+r_y = random_range(-2,2);
+r_a = random_range(0,0.2);
+
+draw_set_halign(fa_center);
+draw_set_font(fnt_devbox);
+
+draw_text_colour(x+r_x,y-176+r_y,tooltip,c_black,c_black,c_black,c_black,1-r_a);
+draw_text_colour(x+r_x,y-180+r_y,tooltip,tooltip_color,tooltip_color,tooltip_color,tooltip_color,1-r_a);
+
+
 if(attack_state != ""){
     switch (attack_state)
     {
