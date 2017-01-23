@@ -30,6 +30,11 @@
     <sprite>sprites\spr_box</sprite>
     <sprite>sprites\spr_solid</sprite>
     <sprites name="Environment">
+      <sprites name="Healthstations">
+        <sprite>sprites\spr_healthstation1</sprite>
+        <sprite>sprites\spr_healthstation2</sprite>
+        <sprite>sprites\spr_healthstation3</sprite>
+      </sprites>
       <sprite>sprites\spr_spikes</sprite>
       <sprite>sprites\spr_zeespiegel</sprite>
       <sprite>sprites\spr_zee</sprite>
@@ -38,7 +43,7 @@
       <sprite>sprites\Spr_bricktile2</sprite>
       <sprite>sprites\Spr_bricktile3</sprite>
       <sprite>sprites\Spr_bricktile4</sprite>
-      <sprite>sprites\sprite32</sprite>
+      <sprite>sprites\spr_cracktile</sprite>
       <sprite>sprites\Spr_ship_frtile</sprite>
       <sprite>sprites\Spr_Pillar_tile</sprite>
       <sprite>sprites\Spr_ship_tile</sprite>
@@ -50,11 +55,6 @@
       <sprite>sprites\spr_crate</sprite>
       <sprite>sprites\spr_door</sprite>
       <sprite>sprites\spr_fakkel</sprite>
-      <sprites name="Healthstations">
-        <sprite>sprites\spr_healthstation1</sprite>
-        <sprite>sprites\spr_healthstation2</sprite>
-        <sprite>sprites\spr_healthstation3</sprite>
-      </sprites>
       <sprite>sprites\market</sprite>
       <sprite>sprites\rudder</sprite>
       <sprite>sprites\sprite56</sprite>
@@ -65,6 +65,11 @@
       <sprite>sprites\sail5</sprite>
       <sprite>sprites\sailwood</sprite>
       <sprite>sprites\sailwood2</sprite>
+      <sprite>sprites\spr_gate_open</sprite>
+      <sprite>sprites\spr_newgate</sprite>
+      <sprite>sprites\spr_pp_blue</sprite>
+      <sprite>sprites\spr_pp_red</sprite>
+      <sprite>sprites\spr_hourglass</sprite>
     </sprites>
     <sprites name="Items">
       <sprite>sprites\spr_healthpot</sprite>
@@ -73,6 +78,7 @@
       <sprite>sprites\spr_explosie_opengameart_org</sprite>
       <sprite>sprites\spr_chain</sprite>
       <sprite>sprites\spr_chainsparkle</sprite>
+      <sprite>sprites\spr_lever</sprite>
     </sprites>
     <sprites name="Menu">
       <sprite>sprites\M_button_clicked</sprite>
@@ -87,12 +93,20 @@
       <sprite>sprites\spr_player_jump_b</sprite>
       <sprite>sprites\spr_player_jump_c</sprite>
       <sprite>sprites\spr_player_idle_new</sprite>
+      <sprite>sprites\spr_player_falling</sprite>
       <sprite>sprites\spr_player_block</sprite>
-      <sprite>sprites\spr_player_attack</sprite>
+      <sprites name="Attack">
+        <sprite>sprites\spr_player_attack</sprite>
+        <sprite>sprites\spr_player_attack_A</sprite>
+        <sprite>sprites\spr_player_attack_B</sprite>
+        <sprite>sprites\spr_player_attack_C</sprite>
+      </sprites>
     </sprites>
     <sprites name="Enemy">
       <sprite>sprites\spr_enemy_idle</sprite>
       <sprite>sprites\spr_enemy_walking</sprite>
+      <sprite>sprites\spr_enemy_trigger</sprite>
+    </sprites>
     <sprites name="Boss 2">
       <sprite>sprites\spr_boss2_static</sprite>
       <sprite>sprites\spr_boss2_walktemp</sprite>
@@ -103,6 +117,7 @@
   <backgrounds name="background">
     <backgrounds name="WORLD 1">
       <background>background\bg_world1</background>
+      <background>background\tileset_bg</background>
     </backgrounds>
     <background>background\tile_dungeon</background>
     <background>background\bg_test</background>
@@ -120,7 +135,6 @@
     <background>background\desertroof_linksonder</background>
     <background>background\desertroof_boven</background>
     <background>background\desertroof_onder</background>
-    <background>background\tileset_bg</background>
     <background>background\bg_dungeon</background>
     <background>background\bg_desert</background>
     <background>background\desert_tile</background>
@@ -131,9 +145,15 @@
       <script>scripts\load_player.gml</script>
       <script>scripts\draw_player.gml</script>
       <script>scripts\movement_player.gml</script>
+      <script>scripts\interaction_player.gml</script>
+      <script>scripts\attack_player.gml</script>
+      <script>scripts\kill_player.gml</script>
     </scripts>
     <scripts name="Obstacles">
       <script>scripts\drop_box.gml</script>
+      <script>scripts\crack_tile.gml</script>
+      <script>scripts\switch_lever.gml</script>
+      <script>scripts\switch_pressureplate.gml</script>
     </scripts>
     <scripts name="Rewinding">
       <script>scripts\rwt_init.gml</script>
@@ -147,27 +167,34 @@
     </scripts>
     <script>scripts\get_input.gml</script>
     <script>scripts\draw_debug.gml</script>
+    <script>scripts\input_init.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_devbox</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <object>objects\obj_enemy</object>
     <object>objects\obj_box</object>
     <object>objects\obj_solid</object>
     <object>objects\obj_control</object>
     <objects name="Environment">
+      <objects name="Healthstations">
+        <object>objects\obj_healthstation1</object>
+        <object>objects\obj_healthstation3</object>
+        <object>objects\obj_healthstation2</object>
+      </objects>
       <object>objects\obj_spikes</object>
       <object>objects\obj_spikespart</object>
       <object>objects\obj_gorepart</object>
       <object>objects\obj_fakkel</object>
       <object>objects\obj_crate</object>
       <object>objects\obj_door</object>
-      <objects name="Healthstations">
-        <object>objects\obj_healthstation1</object>
-        <object>objects\obj_healthstation3</object>
-        <object>objects\obj_healthstation2</object>
-      </objects>
+      <object>objects\obj_lever</object>
+      <object>objects\obj_cracktile</object>
+      <object>objects\obj_gate</object>
+      <object>objects\obj_pp_blue</object>
+      <object>objects\obj_pp_red</object>
     </objects>
     <objects name="Menu">
       <object>objects\obj_bergen</object>
@@ -187,15 +214,12 @@
       <object>objects\obj_chainsparkle</object>
       <object>objects\obj_chain</object>
     </objects>
-<<<<<<< HEAD
-    <object>objects\obj_enemy</object>
-=======
     <objects name="Bosses">
       <object>objects\obj_boss2</object>
     </objects>
->>>>>>> origin/master
   </objects>
   <rooms name="rooms">
+    <room>rooms\room3</room>
     <room>rooms\room2</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>

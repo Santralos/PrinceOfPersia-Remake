@@ -29,6 +29,7 @@
 globalvar current_step;
 globalvar DEBUGGING;
 
+input_init();
 DEBUGGING = false;
 
 current_step = 1;
@@ -38,7 +39,8 @@ drop_rate = room_speed * 2.5;
 drop_box();
 alarm[0] = drop_rate;
 
-
+hg_index = 0;
+anim_hg_speed = 0.2;
 </string>
           </argument>
         </arguments>
@@ -116,14 +118,20 @@ if(BUTTON_DEBUG){
 draw_debug(10,10);
 
 var ww, ll, ratio;
-ww = view_wview /2;
-hh = view_hview - 40;
+ww = view_wview-128;
+hh = 64;
 ll = 240;
 hl = 10;
 
 ratio = ds_list_size(obj_player.capsule) / obj_player.stack_size;
 
+draw_set_colour(c_white);
 draw_rectangle(ww-(ll/2),hh,ww-(ll/2)+(ratio*ll),hh+hl,false);
+
+if(BUTTON_REWINDING){
+    hg_index += anim_hg_speed;
+    draw_sprite(spr_hourglass, hg_index, view_wview-128,128);
+}
 </string>
           </argument>
         </arguments>
